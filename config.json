@@ -1,5 +1,8 @@
 {
-    "name":"LLM_RAC",
-    "url":"https://www.aerocivil.gov.co/autoridad-de-la-aviacion-civil/reglamentacion/rac",
-    "data_location":"./data_rac"
+    "project_name": "LLM_RAC",
+    "pdf_download_settings": {
+        "target_url": "https://www.aerocivil.gov.co/autoridad-de-la-aviacion-civil/reglamentacion/rac",
+        "storage_path": "./data_rac",
+        "max_download_limit": 4
+    }
 }
