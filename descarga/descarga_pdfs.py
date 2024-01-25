@@ -1,8 +1,15 @@
+
+# Importar las paginas a Utilizar
+import pdf_reader
+
+
+# Importar librerias
 import os
 import requests
 
 from bs4 import BeautifulSoup
 from IPython.display import HTML
+from urllib.parse import urljoin
 
 
 # Here, provide the URL where are all the PDFs that you want to download are located.
@@ -23,7 +30,6 @@ response = requests.get(url)
 
 # With BeautifulSoup library you can obtein data from HTML or XML, for this case we are obteining it for HTML dates
 soup = BeautifulSoup(response.text, "html.parser")
-
 
 
 # This part of the code checks for all PDF´s field in the page
@@ -51,3 +57,15 @@ path_pdf = []
 
 print(f"\nThe PDFs path are:\n{path_pdf}")
 
+
+# DIGITE LA PAGINA QUE QUIERE LEER
+
+pag_re = 1
+
+pag_re = path_pdf(pag_re)
+
+num_pag = pdf_reader.reader(pag_re)
+cont_pag =pdf_reader.extract(pag_re)
+
+print(f("El PDF tiene {num_pag} paginas, el contenido de las paginas es: \n\n{cont_pag}"))
+                   
