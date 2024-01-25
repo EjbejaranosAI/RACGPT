@@ -39,12 +39,15 @@ for link in soup.select("a[href$='.pdf']"):
         f.write(requests.get(urljoin(url,link['href'])).content)
 
 
+# Here is the list of the PDFs that have been downloaded
+        
 pdfs = os.listdir(folder_location)
 print(f"The PDFs downloaded are:\n{pdfs}")
+
+# With this code, you are avable to see the paths of the PDFs
 
 path_pdf = []
 [path_pdf.append(os.path.join(folder_location,rac)) for rac in pdfs]
 
 print(f"\nThe PDFs path are:\n{path_pdf}")
-
 
