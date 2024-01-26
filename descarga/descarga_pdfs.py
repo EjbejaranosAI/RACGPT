@@ -25,7 +25,7 @@ if not os.path.exists(folder_location):os.mkdir(folder_location)
 
 
 
-# Here the vraiable response countain all information about the page
+# Here the variable response co ntain all information about the page
 response = requests.get(url)
 
 # With BeautifulSoup library you can obtein data from HTML or XML, for this case we are obteining it for HTML dates
@@ -58,14 +58,22 @@ path_pdf = []
 print(f"\nThe PDFs path are:\n{path_pdf}")
 
 
-# DIGITE LA PAGINA QUE QUIERE LEER
+# DIGITE El PDF QUE QUIERE LEER
 
 pag_re = 1
 
 pag_re = path_pdf(pag_re)
 
 num_pag = pdf_reader.reader(pag_re)
-cont_pag =pdf_reader.extract(pag_re)
+cont_pag = pdf_reader.extract(pag_re)
+
+for page_num, page_content in cont_pag:
+    print(40*"===")
+    print(f"\nPage: {page_num}")
+    print(f"Current content in the PDF {page_content}")
+    print(50*"===")
+    print("\n")
+
 
 print(f("El PDF tiene {num_pag} paginas, el contenido de las paginas es: \n\n{cont_pag}"))
                    
