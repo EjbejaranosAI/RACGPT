@@ -1,0 +1,34 @@
+Youtube Metadata API
+https://github.com/iejMac/video2dataset/blob/main/examples/yt_metadata.md
+
+Dataset Using API
+https://github.com/kb22/Create-dataset-using-API/blob/master/Create%20Dataset%20using%20API.ipynb
+
+Twitch API
+https://towardsdatascience.com/creating-a-dataset-using-an-api-with-python-dcc1607616d
+https://github.com/kb22/Create-dataset-using-API
+
+REST API
+https://docs.github.com/es/rest/about-the-rest-api/about-the-rest-api?apiVersion=2022-11-28
+
+TRAINING CUSTOM OBJECT DETECTOR
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html
+
+PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware
+https://huggingface.co/blog/peft	
+
+FASTCHAT
+https://github.com/lm-sys/FastChat	
+
+BLOOM: 
+https://huggingface.co/bigscience/bloom#tokenization
+
+LLMs models 
+
+MODELS list:
+https://sungkim11.medium.com/list-of-open-sourced-fine-tuned-large-language-models-llm-8d95a2e0dc76
+
+https://medium.com/@ayush-thakur02/top-llm-models-on-huggingface-outperforming-gpt-variants-773e9c906dc1
+
+Vigogne 🦙: French Instruction-following and Chat Models
+https://github.com/bofenghuang/vigogne

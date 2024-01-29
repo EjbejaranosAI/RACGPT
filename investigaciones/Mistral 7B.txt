@@ -1,0 +1,10 @@
+Mistral 7B
+
+With the progress of the NLP, the computaniolan cost and inference latency have incresed. This model is based on a transformer architecture
+
+This model counts with two important characteristics.
+
+Grouped-Query Attention-GQA
+
+Sliding Window Attention-SWA
+https://arxiv.org/pdf/2310.06825.pdf

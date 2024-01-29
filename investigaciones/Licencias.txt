@@ -1,0 +1,16 @@
+Apache 2.0.
+Esta es una licencia muy permisiva con el software. En su versión 2.0 la licencia Apache obliga a mantener todos los derechos de autor y patentes asociadas al software. Así mismo permite que el software pueda ser ejecutado, modificado y redistribuido.
+
+MIT.
+Esta es la licencia más permisiva del listado, ya que prácticamente permite hacer lo que nosotros deseemos con el software. Ya sea ejecutarlo, estudiarlo, modificarlo, redistribuido, e inclusive, sub-licenciar.
+
+Las únicas restricciones son:
+Mantener los derechos de autor.
+El autor original se deslinda de cualquier daño o mal uso resultado del código licenciado.
+En las copias generadas se debe mantener la licencia MIT.
+
+CC-By-SA 3.0
+Esta licencia permite el uso comercial de la obra y de las posibles obras derivadas, pero la distribución de éstas se debe hacer con una licencia igual a la que regula la obra original, es decir, la obra derivada que se lleve a cabo a partir de la obra original deberá ser explotada bajo la misma licencia.
+Los usuarios pueden mezclar, transformar y crear a partir del contenido de nuestra publicación incluso para fines comerciales. Toda obra derivada de la publicación original deberá ser distribuida bajo la misma licencia CC-BY-SA. La UNESCO deberá ser claramente identificada como propietaria de los derechos de autor de la publicación original.
+
+Additional Commercial Terms. If, on the Llama 2 version release date, the monthly active users of the products or services made available by or for Licensee, or Licensee’s affiliates, is greater than 700 million monthly active users in the preceding calendar month, you must request a license from Meta, which Meta may grant to you in its sole discretion, and you are not authorized to exercise any of the rights under this Agreement unless or until Meta otherwise expressly grants you such rights.

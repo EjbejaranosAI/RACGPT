@@ -1,0 +1,80 @@
+Open-source models help develop models that cater to the needs of users. this flexibility enables understanding and processing unique data effectively. Models like ChatGPT can cost up to 1.300/day compared to open-source models wich cost 96/day. Additionaly, open-source models allows complete control over the dataset, offering the best privacy and security. This means that the user has complete control over their data and finetuning process.
+These open-source models can offer lower latence than, for example, GPT-4 wich counts with high latency.
+
+
+
+For any PDF used, the first step is to extract snippets from the text. After that, is necessary use an embedding model to create a "vector store", wich will represent the semantic content of the snippets. When a question is asked, we estimate its embedding and find relevant snippets by similarity search from vector stores. After extracting the snippets, we engineer a prompt and generate an answer using the LLM generation model.
+It is important to emphatize that, in the field of data science, the experimentation ande development are very crucial elements.
+
+
+First step.
+Setting up the model and the embeddings, wich are critical to process the information from the PDF.
+
+  Step 0: LLM Embedding ModelsCodeBase.
+
+Here we have to setting up the models and embeddings.
+
+Instructor XL. instruction-finetuned text embedding model that generate embeddings for any task instruction and domains. IT ranks better than OpenAI's ADA in their embeddings models.
+
+Sbert. Good star for prototyping the application.
+  
+  LLM Generation Models CodeBase.
+
+FlanT5. It's Text2text generator finetuned on several task like summarisation and answering questions. And also use an encode-decoder architecture of transformers. Apache 2.0 licensed.
+
+FastChatT5 3b. It's a model fine-tuned in FlanT5. Apache 2.0 licensed
+
+Falcon7b. Is a text model based in decoder, it's higher version. Falcon-40b is the best open-source model, this due their high-quality data.
+
+List of other high-performing open-sorce models (https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+
+These models are employ using Hugging Face pipelines, wich helps simplifying the process of loading the models and using them for inference.
+
+  This is a auto device map feature assists, wich laad the LLM utilizing GPU, if it isn't enough, then load some layers onto CPU memory. and last if the model can't be loaded, are stored into the disk space.
+
+  8-bit helps to quantify the LLM and reduce the memory requirements by half.
+
+  Step 1:
+Load the PDF and split it into manageable test snippets.
+
+  Step 2:
+Retrieve relevant snippets with questions made by the embeddings and after that constructing a prompt to query the LLM
+
+ Step 3:
+Querying the LLM, this is made using our question, and the pdf knowledge bot will return the relevant information extracted from PDF. And packaging into a class, this made the code more organized and allow us to encapsulate all functionalities into a class.
+
+ Step 4:
+Use streamlit to create the app. And have to be configurated by the model an embedding on the GPU or CPU only once.
+
+In summarazing, the app allows to the user upload a PDF file and choose the model, with this the user can ask a question.
+
+The APP is deployed in Shakudo, this affers enhanced security and control over the our app, this is made by locks the application behind the SSO or the organization.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

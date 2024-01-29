@@ -1,0 +1,30 @@
+RAG (Rtreival-augmented Generation) for LLMs use a external datastore, where the prompt generated is a combination of context, history, and relevant knowledge. When the LLM is made with RAG, count with and large margin with much fewer parameters, also this allows them to update their knowledge by replacing their retrieval corpa and provde citations, by this form the users is able to verify and evaluate the predictions.
+
+This technique combine two metods:
+1. Information retrieval. This consist in search relevant information throught large databases or in text documents.
+2.Text generation. With this information some model like a Trasnformer is used to synthesize the information
+
+The most common systems used are VECTOR DATABASES and FEATURE STORES, and is posible beacuse the LLMs perform "in-context learning".
+With RAG, the user feed the LLM with externak information or context, from data store, this information is not avaible to the LLM, like documents not included in the training data.
+
+FINE-TUNING, with this metod the LLM is trained in a particular domain, this means that becomes an expert toa particular topic.
+
+With RAG, the LLM prompt is augmented by a constant feedback, in wich the LLM has real-time data, personal data, or context information. Wihtout this concept, the LLMs extrapole the information if this is not available, wich means that create false information or more common called hallucination. With RAG the model is able to forget concrete information, while in a fine-tuned model is imposible eliminate concrete data 
+
+Components:
+
+Orchestration layer.
+Retrieval tools. utilities that return context that informs nd grounds responses to the user prompt.
+
+
+
+RAG APLICATIONS:
+
+OpenSearch
+Algolia neural search
+
+LangChain
+LlamaIndex
+Semantic Kernel
+
+
