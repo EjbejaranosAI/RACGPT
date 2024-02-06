@@ -1,24 +1,21 @@
 import archivos
+import json
 
 from os import walk, getcwd
 
 ruta = 'Ruta de los archivos para unir'
+
 txt_completo = []
 
 path_files = archivos.info_rutas(ruta)
     
-num = len(path_files)
+for path_file in path_files:
+  with open(path_file, "r") as archivo:  
+    data_json = json.load(archivo)
+    txt_completo.extend(data_json)
 
-for i in range(num):
-  with open(path_files[i],'r') as archivo:
-    datos = f'data{i} = {repr(archivo.read())}'
-    exec(datos)
-    txt_completo.append(eval(f'data{i}'))
+ruta_guardado = 'Ruta para guardar el archivo'
 
-data = archivos.list_to_json(txt_completo)
+with open(ruta_guardado, 'w') as archivo_unido:
+  json.dump(txt_completo,archivo_unido,  indent=4)
 
-with open('Ruta para guardar el archivo', 'w') as archivo:
-    rac = '\n'.join(txt_completo)
-    rac = rac.replace('[', '').replace(']', '').replace('},', '}').replace('}','},').replace('\n\n','').replace('{\n{','')
-
-    archivo.write(rac)

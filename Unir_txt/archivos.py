@@ -13,10 +13,3 @@ def info_rutas(ruta):
 
     return path
 
-
-def list_to_json (file):
-
-  json_data = json.dumps(file, indent=4, ensure_ascii=False)
-  print(json_data)
-
-  return json_data
